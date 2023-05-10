@@ -8,7 +8,7 @@ class EventManager(object):
     """
     Facade Class
     """
-    def __init__(self) -> None:
+    def __init__(self):
         print("Event Manager: Let me talk to the folks\n")
         self.hotelier = None
         self.florist = None
@@ -35,7 +35,7 @@ class Hotelier(object):
     """
     Subsystem Class
     """
-    def __init__(self) -> None:
+    def __init__(self):
         print("Arranging the Hotel for Marriage? --")
 
     def __is_available(self):
@@ -53,7 +53,7 @@ class Florist(object):
     """
     Subsystem Class
     """
-    def __init__(self) -> None:
+    def __init__(self):
         print("Flower Decorations for the Event? --")
 
     def set_flower_requirements(self):
@@ -66,7 +66,7 @@ class Caterer(object):
     """
     Subsystem Class
     """
-    def __init__(self) -> None:
+    def __init__(self):
         print("Food Arrangements for the Event --")
 
     def set_cuisine(self):
@@ -79,7 +79,7 @@ class Musician(object):
     """
     Subsystem Class
     """
-    def __init__(self) -> None:
+    def __init__(self):
         print("Musical Arrangements for the Marriage --")
 
     def set_music_type(self):
@@ -92,7 +92,7 @@ class You(object):
     """
     Client Class
     """
-    def __init__(self) -> None:
+    def __init__(self):
         print("You: Whoa! Marriage Arrangements?!!!")
 
     def ask_event_manager(self):

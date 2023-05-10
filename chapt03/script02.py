@@ -49,7 +49,7 @@ class Profile(metaclass = ABCMeta):
     """
     Superclass
     """
-    def __init__(self) -> None:
+    def __init__(self):
         self.sections = []
         self.create_profile()
 

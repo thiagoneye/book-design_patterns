@@ -5,7 +5,7 @@ Methods
 # Class
 
 class Person(object):
-    def __init__(self, name, age) -> None:
+    def __init__(self, name, age):
         self.name = name
         self.age = age
 

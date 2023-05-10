@@ -88,7 +88,7 @@ class HamPizza(NonVegPizza):
               type(VegPizza).__name__)
 
 class PizzaStore:
-    def __init__(self) -> None:
+    def __init__(self):
         pass
 
     def make_pizzas(self):

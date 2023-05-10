@@ -5,7 +5,7 @@ Abstraction
 # Classes
 
 class Adder:
-    def __init__(self) -> None:
+    def __init__(self):
         self.sum = 0
 
     def add(self, value):
