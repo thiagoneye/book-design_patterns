@@ -1,11 +1,7 @@
 {% extends 'base.html' %}
-<title>
-    ToDo
-</title>
+<title>ToDo</title>
 {% block body %}
-<h3>
-    Your Tasks
-</h3>
+<h3>Your Tasks</h3>
 <table border="1">
     <tr align="center">
         <td>Id</td>
@@ -24,9 +20,9 @@
         <td>Closed</td>
             {% end %}
             {% if todo[2] %}
-        <td><a href="/todo/update/{{todo[0]}}/0">Close Task</a></td>
+        <td><a href="/todo/update/{{todo[0]}}/status/0">Close Task</a></td>
             {% else %}
-        <td><a href="/todo/update/{{todo[0]}}/1">Open Task</a></td>
+        <td><a href="/todo/update/{{todo[0]}}/status/1">Open Task</a></td>
             {% end %}
         <td><a href="/todo/delete/{{todo[0]}}">X</a></td>
     </tr>

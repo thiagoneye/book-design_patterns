@@ -16,9 +16,6 @@ def _execute(query: str):
     if query[:6] == "CREATE":
         conn.execute(query)
     else:
-        #TODO
-        #Test
-        print(query)
         cur = conn.cursor()
         cur.execute(query)
 
@@ -29,15 +26,5 @@ def _execute(query: str):
 
     conn.close()
 
+    print(todos)
     return todos
-
-
-# Main
-
-if __name__ == "__main__":
-    # Connection test
-    query = "CREATE TABLE IF NOT EXISTS task \
-            (id INTEGER PRIMARY KEY, \
-            name TEXT, \
-            status NUMERIC)"
-    _execute(query)
