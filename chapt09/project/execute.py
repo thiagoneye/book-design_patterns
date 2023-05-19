@@ -26,5 +26,4 @@ def _execute(query: str):
 
     conn.close()
 
-    print(todos)
     return todos
